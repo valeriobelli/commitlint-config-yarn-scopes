@@ -1,0 +1,59 @@
+{
+  "name": "commitlint-config-yarn-scopes",
+  "version": "1.0.0",
+  "description": "Commitlint config to enforce packages' name in a workspace as commit scope.",
+  "main": "lib/index.js",
+  "module": "esm/index.js",
+  "typings": "typings/index.d.ts",
+  "repository": "https://github.com/valeriobelli/commitlint-config-yarn-scopes",
+  "author": "Valerio Belli <belli.valerio@outlook.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "esm/",
+    "lib/",
+    "typings/"
+  ],
+  "exports": {
+    "import": "./esm/index.mjs",
+    "require": "./lib/index.js"
+  },
+  "scripts": {
+    "build": "yarn clean && yarn build:bundle && yarn build:typings",
+    "build:bundle": "rollup -c rollup.config.js",
+    "build:typings": "tsc --project tsconfig.code.json",
+    "clean": "rm -rf ./{.tsbuildinfo,lib,typings}",
+    "lint": "eslint --ext js,ts src",
+    "test": "vitest",
+    "typecheck": "tsc --project tsconfig.code.json --noEmit"
+  },
+  "dependencies": {
+    "semver": "^7.3.7"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "17.0.3",
+    "@commitlint/config-conventional": "17.0.3",
+    "@commitlint/types": "^17.0.0",
+    "@rollup/plugin-alias": "3.1.9",
+    "@rollup/plugin-node-resolve": "13.3.0",
+    "@swc/core": "1.2.212",
+    "@types/node": "^14.14.31",
+    "@types/semver": "^7.3.10",
+    "@typescript-eslint/eslint-plugin": "5.30.5",
+    "@typescript-eslint/parser": "5.30.5",
+    "eslint": "8.19.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-import-resolver-typescript": "3.2.5",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-node": "11.1.0",
+    "husky": "8.0.1",
+    "prettier": "2.7.1",
+    "rollup": "2.76.0",
+    "rollup-plugin-swc3": "0.3.0",
+    "typescript": "4.7.4",
+    "vitest": "0.18.0"
+  },
+  "packageManager": "yarn@3.2.1"
+}
