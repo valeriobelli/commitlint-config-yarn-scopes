@@ -24,7 +24,7 @@
     "build": "yarn clean && yarn build:bundle && yarn build:typings",
     "build:bundle": "rollup -c rollup.config.js",
     "build:typings": "tsc --project tsconfig.code.json",
-    "clean": "rm -rf ./{.tsbuildinfo,lib,typings}",
+    "clean": "rimraf .tsbuildinfo esm lib typings",
     "lint": "eslint --ext js,ts src",
     "test": "vitest",
     "typecheck": "tsc --project tsconfig.code.json --noEmit"
@@ -50,6 +50,7 @@
     "eslint-plugin-node": "^11.1.0",
     "husky": "^8.0.1",
     "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
     "rollup": "^2.76.0",
     "rollup-plugin-swc3": ">=0.3.0 <1.0.0",
     "typescript": "^4.7.4",
