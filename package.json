@@ -14,7 +14,8 @@
   "files": [
     "esm/",
     "lib/",
-    "typings/"
+    "typings/",
+    "CHANGELOG.md"
   ],
   "exports": {
     "import": "./esm/index.mjs",
