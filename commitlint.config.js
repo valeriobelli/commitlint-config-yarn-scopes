@@ -10,7 +10,7 @@ const config = {
     'footer-empty': ['error', 'never'],
     'header-max-length': ['error', 'always', 90],
     'type-empty': ['error', 'never'],
-    'type-enum': ['error', 'always', ['feat', 'fix', 'refactor', 'ci']],
+    'type-enum': ['error', 'always', ['ci', 'docs', 'feat', 'fix', 'refactor']],
   },
 }
 
