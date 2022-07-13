@@ -23,7 +23,7 @@
   "scripts": {
     "build": "yarn clean && yarn build:bundle && yarn build:typings",
     "build:bundle": "rollup -c rollup.config.js",
-    "build:typings": "tsc --project tsconfig.code.json",
+    "build:typings": "tsc --project tsconfig.code.json --emitDeclarationOnly",
     "clean": "rimraf .tsbuildinfo esm lib typings",
     "lint": "eslint --ext js,ts src",
     "test": "vitest",
