@@ -2,8 +2,8 @@ name: CD
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - "v*"
 
 jobs:
   setup:
@@ -30,4 +30,4 @@ jobs:
         run: yarn build
 
       - name: Publish
-        run: yarn pack
+        run: yarn npm publish
