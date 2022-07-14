@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-yarn-scopes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Commitlint config to enforce packages' name in a workspace as commit scope.",
   "main": "lib/index.js",
   "module": "esm/index.js",
@@ -27,15 +27,15 @@
     "build:typings": "tsc --project tsconfig.code.json --emitDeclarationOnly",
     "clean": "rimraf .tsbuildinfo esm lib typings",
     "lint": "eslint --ext js,ts src",
-    "postinstall": "is-ci || husky install",
+    "postinstall": "husky install",
     "postpack": "pinst --enable",
     "prepack": "pinst --disable",
     "test": "vitest",
     "typecheck": "tsc --project tsconfig.code.json --noEmit"
   },
   "dependencies": {
-    "semver": "^7.3.7",
-    "pinst": "^3.0.0"
+    "pinst": "^3.0.0",
+    "semver": "^7.3.7"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
@@ -54,7 +54,6 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
     "husky": "^8.0.1",
-    "is-ci": "^3.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
