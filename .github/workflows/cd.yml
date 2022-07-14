@@ -31,3 +31,5 @@ jobs:
 
       - name: Publish
         run: yarn npm publish
+        env:
+          NPM_SECRET_KEY: ${{ secrets.NPM_SECRET_KEY }}
