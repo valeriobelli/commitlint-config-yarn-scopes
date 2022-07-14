@@ -17,8 +17,6 @@ jobs:
           - 14.x
           - 16.x
           - 18.x
-    env:
-      NPM_SECRET_KEY: ${{ secrets.NPM_SECRET_KEY }}
 
     steps:
       - name: Checkout repo
@@ -42,8 +40,6 @@ jobs:
           - 14.x
           - 16.x
           - 18.x
-    env:
-      NPM_SECRET_KEY: ${{ secrets.NPM_SECRET_KEY }}
 
     steps:
       - name: Checkout repo
@@ -70,8 +66,6 @@ jobs:
           - 14.x
           - 16.x
           - 18.x
-    env:
-      NPM_SECRET_KEY: ${{ secrets.NPM_SECRET_KEY }}
 
     steps:
       - name: Checkout repo
@@ -98,8 +92,6 @@ jobs:
           - 14.x
           - 16.x
           - 18.x
-    env:
-      NPM_SECRET_KEY: ${{ secrets.NPM_SECRET_KEY }}
 
     steps:
       - name: Checkout repo
@@ -126,8 +118,6 @@ jobs:
           - 14.x
           - 16.x
           - 18.x
-    env:
-      NPM_SECRET_KEY: ${{ secrets.NPM_SECRET_KEY }}
 
     steps:
       - name: Checkout repo

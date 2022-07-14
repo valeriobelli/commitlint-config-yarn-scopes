@@ -12,8 +12,6 @@ jobs:
       matrix:
         node-version:
           - 14
-    env:
-      NPM_SECRET_KEY: ${{ secrets.NPM_SECRET_KEY }}
 
     steps:
       - name: Checkout repo
@@ -32,4 +30,8 @@ jobs:
         run: yarn build
 
       - name: Publish
-        run: yarn npm publish
+        run: |
+          yarn config set npmAuthToken $NPM_SECRET_KEY
+          yarn npm publish
+        env:
+          NPM_SECRET_KEY: ${{ secrets.NPM_SECRET_KEY }}
