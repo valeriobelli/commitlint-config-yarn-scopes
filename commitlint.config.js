@@ -7,10 +7,10 @@ const config = {
     },
   },
   rules: {
-    'footer-empty': ['error', 'never'],
-    'header-max-length': ['error', 'always', 90],
-    'type-empty': ['error', 'never'],
-    'type-enum': ['error', 'always', ['ci', 'docs', 'feat', 'fix', 'refactor']],
+    'footer-empty': [2, 'never'],
+    'header-max-length': [2, 'always', 90],
+    'type-empty': [2, 'never'],
+    'type-enum': [2, 'always', ['ci', 'docs', 'feat', 'fix', 'refactor']],
   },
 }
 
