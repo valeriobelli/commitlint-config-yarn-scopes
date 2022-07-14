@@ -1,3 +1,3 @@
 module.exports = {
-  '*.{ts,tsx,js,json}': 'npx --no-install prettier --check',
+  '*.{ts,tsx,js}': 'npx --no-install prettier --check',
 }
