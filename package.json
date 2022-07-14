@@ -28,13 +28,14 @@
     "clean": "rimraf .tsbuildinfo esm lib typings",
     "lint": "eslint --ext js,ts src",
     "postinstall": "is-ci || husky install",
-    "postpack": "is-ci || pinst --enable",
-    "prepack": "is-ci || pinst --disable",
+    "postpack": "pinst --enable",
+    "prepack": "pinst --disable",
     "test": "vitest",
     "typecheck": "tsc --project tsconfig.code.json --noEmit"
   },
   "dependencies": {
-    "semver": "^7.3.7"
+    "semver": "^7.3.7",
+    "pinst": "^3.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.3",
@@ -55,7 +56,6 @@
     "husky": "^8.0.1",
     "is-ci": "^3.0.1",
     "lint-staged": "^13.0.3",
-    "pinst": "^3.0.0",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "rollup": "^2.76.0",
