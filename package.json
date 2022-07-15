@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-yarn-scopes",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Commitlint config to enforce packages' name in a workspace as commit scope.",
   "main": "lib/index.js",
   "module": "esm/index.js",
