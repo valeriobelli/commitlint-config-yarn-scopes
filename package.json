@@ -1,13 +1,26 @@
 {
   "name": "commitlint-config-yarn-scopes",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Commitlint config to enforce packages' name in a workspace as commit scope.",
   "main": "lib/index.js",
   "module": "esm/index.js",
   "typings": "typings/index.d.ts",
-  "repository": "https://github.com/valeriobelli/commitlint-config-yarn-scopes",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/valeriobelli/commitlint-config-yarn-scopes"
+  },
+  "bugs": {
+    "url": "https://github.com/valeriobelli/commitlint-config-yarn-scopes/issues"
+  },
   "author": "Valerio Belli <belli.valerio@outlook.com>",
   "license": "MIT",
+  "keywords": [
+    "conventional-changelog",
+    "commitlint",
+    "commitlint-config",
+    "conventional-commits",
+    "yarn"
+  ],
   "engines": {
     "node": ">=14.0.0"
   },

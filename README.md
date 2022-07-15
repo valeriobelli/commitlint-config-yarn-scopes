@@ -27,7 +27,7 @@ Add the following snippet in the `commitlint.config.js` file of your project
 Optionally, this package exports a function `getPackages` that can be used to extract the scopes manually. The usage is the following
 
 ```javascript
-const { getPackages } = require('commitlint-config-yarn-scopes')
+const { utils: { getPackages } } = require('commitlint-config-yarn-scopes')
 
 modules.exports = {
   ...,
