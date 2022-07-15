@@ -5,7 +5,7 @@ import { promisify } from 'util'
 import { classicHandler } from './handlers/classic'
 import { modernHandler } from './handlers/modern'
 
-export const getPackages = ({ cwd = process.cwd() }: LoadOptions = {}) =>
+const getPackages = ({ cwd = process.cwd() }: LoadOptions = {}) =>
   promisify(exec)('yarn --version', { encoding: 'utf-8' })
     .then(({ stderr, stdout }) => {
       if (stderr) {
@@ -24,7 +24,7 @@ export const getPackages = ({ cwd = process.cwd() }: LoadOptions = {}) =>
       return []
     })
 
-export default {
+export = {
   rules: {
     'scope-enum': (ctx: LoadOptions) => getPackages(ctx).then((packages) => [2, 'always', packages]),
   },
