@@ -20,7 +20,7 @@ Add the following snippet in the `commitlint.config.js` file of your project
 
 ```suggestion
 {
-  extends: ['commitlint-config-yarn-scopes']
+  extends: ['yarn-scopes']
 }
 ```
 
